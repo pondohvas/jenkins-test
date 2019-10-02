@@ -6,6 +6,8 @@ pipeline {
             script {
                                   powershell 'export MSYS_NO_PATHCONV=1'
                                                sh 'export MSYS_NO_PATHCONV=1'
+                                                 powershell 'set MSYS_NO_PATHCONV=1'
+                                                                                              sh 'set MSYS_NO_PATHCONV=1'
                                                sh 'mvn --version'
                             }
 
