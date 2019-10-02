@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3.3.3'
-            args 'MSYS_NO_PATHCONV=1'
+            args '-w C:\\Users\\teste\\.jenkins\\workspace\\Java_maven_master'
          }
      }
     stages {
