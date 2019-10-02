@@ -2,7 +2,6 @@ pipeline {
     agent {
         docker {
             image 'maven:3.3.3'
-            args '-w C:\\Users\\teste\\.jenkins\\workspace\\Java_maven_master'
          }
      }
     stages {
