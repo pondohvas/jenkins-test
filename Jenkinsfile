@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                powershell 'export MSYS_NO_PATHCONV=1'
                 sh 'export MSYS_NO_PATHCONV=1'
                 sh 'mvn --version'
             }
