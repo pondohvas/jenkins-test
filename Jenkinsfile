@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'export MSYS_NO_PATHCONV=1'
                 sh 'mvn --version'
             }
         }
